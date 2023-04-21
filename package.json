@@ -1,7 +1,7 @@
 {
   "name": "metabnb",
   "private": true,
-  "homepage": "https://oladee.github.io/MetaBnB/",
+  "homepage": "https://oladee.github.io/MetaBnB",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
