@@ -12,6 +12,7 @@
 }
 li{
   list-style: none;
+  padding-bottom: 15px;
 }
 nav{
   display: flex;
@@ -34,12 +35,12 @@ nav{
 #sideMenu{
   position: absolute;
   background-color: white;
-  padding: 10vw;
-  padding-left: 3.0vw;
+  padding: 0px;
+  padding-left: 0px;
   min-height: 30%;
-  width: 70vw;
+  width: 50vw;
   top: 80px;
-  left: 40vw;
+  left: 50vw;
   z-index: 2;
 
 }
@@ -71,6 +72,12 @@ nav{
   color: #ffffff;
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
   padding: 0.56rem 3.438rem;
+}
+.cWallet{
+  color: #ffffff;
+  padding: 10px 10px;
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  border-radius: 10px;
 }
 form{
   display: flex;
