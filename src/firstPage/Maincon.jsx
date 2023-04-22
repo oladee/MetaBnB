@@ -6,7 +6,7 @@ import image6 from "../assets/image 6.svg"
 export default function Maincon() {
   return (
     <>
-      <div>
+      <div className="mainContainer">
         <div className="rent">
           <h1>
           Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span> 

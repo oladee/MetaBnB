@@ -17,9 +17,6 @@ export default function Navbar() {
           <div className="list">
                 <ul>
                 <li>
-                    <button></button>
-                </li>
-                <li>
                     <a href="">Place to stay</a>
                 </li>
                 <li>
@@ -29,7 +26,10 @@ export default function Navbar() {
                     <a href="">Trending</a>
                 </li>
                 <li>
-                    <a href="">Categories</a>
+                    <a href="">Community</a>
+                </li>
+                <li>
+                    <button></button>
                 </li>
                 </ul>
           </div>
