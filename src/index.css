@@ -1,8 +1,12 @@
+*{
+  box-sizing: border-box;
+}
 :root {
   font-family: 'Red Rose', cursive;
   line-height: 1.5;
   color:#434343;
   padding: 1em;
+  
 
   font-synthesis: none;
   -moz-osx-font-smoothing: grayscale;

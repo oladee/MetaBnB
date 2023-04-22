@@ -5,8 +5,7 @@ export default function Maincon() {
       <div>
         <div className="rent">
           <h1>
-            Rent a <span>Place</span> away from <span>Home</span> in the
-            <span>Metaverse</span>
+          Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span> 
           </h1>
           <p>
             we provide you access to luxury and affordable houses in the
@@ -27,7 +26,8 @@ export function Form() {
   const [value, setValue] = useState(null);
   const handleSubmit = (e)=>{
     e.preventDefault();
-     setFormData(value)}
+     setFormData({...formData, value                                                        })
+    }
   const handleClick = () => setValue("");
   const changes = (e) => {
     e.preventDefault();
@@ -36,7 +36,7 @@ export function Form() {
   return (
     <>
       <form action="" onSubmit={handleSubmit}>
-        <input type="text" name="" id="searchBar" />
+        <input value={value} type="text" name="" id="searchBar" onChange={changes} />
         <button onClick={handleClick} className="search">Search</button>
       </form>
     </>
