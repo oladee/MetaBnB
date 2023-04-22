@@ -1,4 +1,8 @@
 import { useState } from "react";
+import image3 from "../assets/image 3.svg"
+import image4 from "../assets/image 4.svg"
+import image5 from "../assets/image 5.svg"
+import image6 from "../assets/image 6.svg"
 export default function Maincon() {
   return (
     <>
@@ -16,7 +20,12 @@ export default function Maincon() {
             <Form />
           </div>
         </div>
-        <div></div>
+        <div className="mainImages">
+            <img src={image3} alt="image3" />
+            <img src={image4} alt="image4" />
+            <img src={image5} alt="image5" />
+            <img src={image6} alt="image6" />
+        </div>
       </div>
     </>
   );

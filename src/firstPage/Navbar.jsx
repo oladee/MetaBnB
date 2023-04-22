@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className="list">
                 <ul>
                 <li>
-                    <a href="">Home</a>
+                    <button></button>
                 </li>
                 <li>
                     <a href="">Place to stay</a>
@@ -57,7 +57,7 @@ export function Side({display}){
             <div className="links">
               <ul>
                 <li>
-                  <a href="">Categories</a>
+                  <button className="cWallet">Connect to Wallet</button>
                 </li>
                 <li>
                   <a href="">Home</a>
