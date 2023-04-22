@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 :root {
   font-family: 'Red Rose', cursive;
@@ -20,6 +22,7 @@ nav{
 }
 .logoIcon{
   margin-right: auto;
+  display: flex;
 }
 .logo{
   width: 2em;
@@ -92,19 +95,43 @@ input{
 }
 @media(min-width: 1024px){
   :root{
-    padding: 2.5rem 4rem
+    padding: 1.5rem 5rem
+  }
+  .logo{
+    width: 2.6rem;
+  }
+  .text{
+    font-size: 3rem;
   }
   nav li{
     display: inline-block;
+    padding: 10px ;
+    font-size: 20px;
+    
+  }
+  nav a{
+    text-decoration: none;
+    color: #434343;
   }
   .list{
     display: block;
+  }
+  .links{
+    display: flex;
+    
+  }
+  .list ul{
+    margin-right: 300px;
   }
   .aside{
     display: none;
   }
   .mainContainer{
+    padding-top: 3.5rem;
     display: flex;
+  }
+  .rent{
+    width:80%;
   }
   .mainImages{
     display: block;

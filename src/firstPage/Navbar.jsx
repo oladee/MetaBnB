@@ -1,4 +1,5 @@
 import logo from "../assets/Vector.svg";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
 export default function Navbar() {
@@ -15,23 +16,25 @@ export default function Navbar() {
             </div>
        
           <div className="list">
-                <ul>
-                <li>
-                    <a href="">Place to stay</a>
-                </li>
-                <li>
-                    <a href="">NFTs</a>
-                </li>
-                <li>
-                    <a href="">Trending</a>
-                </li>
-                <li>
-                    <a href="">Community</a>
-                </li>
-                <li>
-                    <button></button>
-                </li>
-                </ul>
+                <div className="links">
+                  <ul>
+                  <li>
+                      <Link to="/place-to-stay">Place to stay</Link>
+                  </li>
+                  <li>
+                      <Link to="/NFTs">NFTs</Link>
+                  </li>
+                  <li>
+                      <Link to="/trending">Trending</Link>
+                  </li>
+                  <li>
+                      <Link to="/community">Community</Link>
+                  </li>
+                  </ul>
+                  <div>
+                    <button>Connect to Wallet</button>
+                  </div>
+                </div> 
           </div>
         </div>
       </nav>
