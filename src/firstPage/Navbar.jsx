@@ -17,11 +17,11 @@ export default function Navbar() {
 
           <div className="list">
             <div className="links">
+                <Link to="/Home">Home</Link>
+
                 <Link to="/place-to-stay">Place to stay</Link>
 
-                <Link to="/NFTs">NFTs</Link>
-
-                <Link to="/trending">Trending</Link>
+                <Link to="/NFT">NFTs</Link>
 
                 <Link to="/community">Community</Link>
             </div>

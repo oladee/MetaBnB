@@ -1,4 +1,7 @@
 import { useState } from "react";
+import mbtoken from "../assets/MBtoken.svg";
+import metaMask from "../assets/Metamask.svg";
+import openSea from "../assets/Opensea.svg"
 import image3 from "../assets/image 3.svg";
 import image4 from "../assets/image 4.svg";
 import image5 from "../assets/image 5.svg";
@@ -30,6 +33,11 @@ export default function Maincon() {
           <img src={image3} alt="image3" className="image3" />
           <img src={image5} alt="image5" className="image5" />
         </div>
+      </div>
+      <div className="wrapper" >
+        <img src={mbtoken} alt="" />
+        <img src={metaMask} alt="" />
+        <img src={openSea} alt="" />
       </div>
     </>
   );

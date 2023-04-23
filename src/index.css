@@ -7,7 +7,7 @@
   font-family: 'Red Rose', cursive;
   line-height: 1.5;
   color:#434343;
-  padding: 1em;
+
   font-synthesis: none;
   -moz-osx-font-smoothing: grayscale;
 
@@ -17,6 +17,7 @@ li{
   padding-bottom: 15px;
 }
 nav{
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +55,9 @@ nav{
 .list{
   display: none;
 }
-
+.mainContainer{
+  padding: 1em;
+}
 .rent h1{
   font-size: 3.5rem;
   letter-spacing: -0.02em;
@@ -75,9 +78,6 @@ nav{
   width: 96.1%;
   line-height: 2.58rem;
   margin-bottom: 1.5rem;
-}
-.mainImages{
-  display: none;
 }
 .search{
   font-size: 16px;
@@ -114,15 +114,30 @@ input{
 .firstBatch,.secondBatch{
   display: none;
 }
+.wrapper{
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  margin-top: 30px;
+  padding: 0.6rem 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper img{
+  width: 6.7rem;
+  display: block;
+  padding-right: 20px;
+}
 @media(min-width: 1024px){
   :root{
-    padding: 1.5rem 5rem
+    
   }
   .logo{
     width: 2.6rem;
   }
   .text{
     font-size: 3rem;
+  }
+  nav{
+    padding: 1.5rem 5rem
   }
   nav a{
     text-decoration: none;
@@ -139,6 +154,7 @@ input{
     display: none;
   }
   .mainContainer{
+    padding: 1.5rem 5rem;
     padding-top: 5.5rem;
     display: flex;
   }
