@@ -11,52 +11,47 @@ export default function Navbar() {
           <h1 className="text">Metabnb</h1>
         </div>
         <div className="sub">
-            <div className="aside">
-                <Sidemenu/>
-            </div>
-       
-          <div className="list">
-                <div className="links">
-                  <ul>
-                  <li>
-                      <Link to="/place-to-stay">Place to stay</Link>
-                  </li>
-                  <li>
-                      <Link to="/NFTs">NFTs</Link>
-                  </li>
-                  <li>
-                      <Link to="/trending">Trending</Link>
-                  </li>
-                  <li>
-                      <Link to="/community">Community</Link>
-                  </li>
-                  </ul>
-                  <div>
-                    <button>Connect to Wallet</button>
-                  </div>
-                </div> 
+          <div className="aside">
+            <Sidemenu />
           </div>
+
+          <div className="list">
+            <div className="links">
+                <Link to="/place-to-stay">Place to stay</Link>
+
+                <Link to="/NFTs">NFTs</Link>
+
+                <Link to="/trending">Trending</Link>
+
+                <Link to="/community">Community</Link>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div className="button">
+                <button className="DWallet">Connect to Wallet</button>
         </div>
       </nav>
     </>
   );
 }
 export function Sidemenu() {
-    const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
   return (
-    
     <>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
-      <Side display={isOpen}/>
+      <Hamburger toggled={isOpen} toggle={setOpen} className="burger" />
+      <Side display={isOpen} />
     </>
   );
 }
-export function Side({display}){
-    return (<>
-                {display && ( <aside id="sideMenu">
+export function Side({ display }) {
+  return (
+    <>
+      {display && (
+        <aside id="sideMenu">
           <div className="flexible">
-            <div>
-            </div>
+            <div></div>
             <div className="links">
               <ul>
                 <li>
@@ -77,7 +72,8 @@ export function Side({display}){
               </ul>
             </div>
           </div>
-        </aside>)}
-    </>)
+        </aside>
+      )}
+    </>
+  );
 }
-
