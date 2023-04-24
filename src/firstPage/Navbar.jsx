@@ -51,25 +51,11 @@ export function Side({ display }) {
       {display && (
         <aside id="sideMenu">
           <div className="flexible">
-            <div></div>
-            <div className="links">
-              <ul>
-                <li>
-                  <button className="cWallet">Connect to Wallet</button>
-                </li>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">Place to stay</a>
-                </li>
-                <li>
-                  <a href="">NFTs</a>
-                </li>
-                <li>
-                  <a href="">Community</a>
-                </li>
-              </ul>
+            <div className="linkes">
+                  <button className="cWallet">Connect to Wallet</button>                <Link to="/Home">Home</Link>
+                  <Link to="/place to stay">Place to stay</Link>
+                  <Link to="">NFTs</Link>
+                  <Link to="">Community</Link>
             </div>
           </div>
         </aside>
