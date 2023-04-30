@@ -17,20 +17,20 @@ export default function Navbar() {
 
           <div className="list">
             <div className="links">
-                <Link to="/Home">Home</Link>
+              <Link to="/Home">Home</Link>
 
-                <Link to="/place-to-stay">Place to stay</Link>
+              <Link to="/place-to-stay">Place to stay</Link>
 
-                <Link to="/NFT">NFTs</Link>
+              <Link to="/NFT">NFTs</Link>
 
-                <Link to="/community">Community</Link>
+              <Link to="/community">Community</Link>
             </div>
-            
           </div>
-          
         </div>
         <div className="button">
-                <button className="DWallet">Connect to Wallet</button>
+        <PopUp butClassName="cWallet" popStyle="mobPopUp">
+          
+        </PopUp>
         </div>
       </nav>
     </>
@@ -52,14 +52,42 @@ export function Side({ display }) {
         <aside id="sideMenu">
           <div className="flexible">
             <div className="linkes">
-                  <button className="cWallet">Connect to Wallet</button>                <Link to="/Home">Home</Link>
-                  <Link to="/place to stay">Place to stay</Link>
-                  <Link to="">NFTs</Link>
-                  <Link to="">Community</Link>
+              <PopUp  butClassName="cWallet" popStyle="mobPopUp"> Thus us</PopUp>
+              <Link to="/Home">Home</Link>
+              <Link to="/place to stay">Place to stay</Link>
+              <Link to="">NFTs</Link>
+              <Link to="">Community</Link>
             </div>
           </div>
         </aside>
       )}
     </>
+  );
+}
+export function PopUp({butClassName, popStyle, children}) {
+  const [popUp, setPopUp] = useState(false);
+
+  function handleClick() {
+    setPopUp(!popUp);
+  }
+  return (
+    <>
+      <Button className={butClassName} handleClick={handleClick}>
+        Connect a Wallet
+      </Button>
+      {popUp &&(
+        <>
+        <div className="overlay"></div>
+        <div className={popStyle} >{children}</div>
+        </>
+      )}
+    </>
+  );
+}
+export function Button({ handleClick, children, className }) {
+  return (
+    <button className={className} onClick={handleClick}>
+      {children}
+    </button>
   );
 }

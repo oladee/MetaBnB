@@ -1,59 +1,63 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 :root {
-  font-family: 'Red Rose', cursive;
+  font-family: "Red Rose", cursive;
   line-height: 1.5;
-  color:#434343;
+  color: #434343;
 
   font-synthesis: none;
   -moz-osx-font-smoothing: grayscale;
-
 }
-li{
+li {
   list-style: none;
   padding-bottom: 15px;
 }
-nav{
+nav {
   padding: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
-nav a{
+nav a {
   text-decoration: none;
   color: #434343;
 }
-.linkes a{
+.linkes a {
   display: block;
   font-size: 20px;
   margin: 15px;
 }
-nav a:hover, .text{
-  background-image: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+nav a:hover,
+.text {
+  background-image: linear-gradient(
+    91.47deg,
+    #dc3e88 18.25%,
+    #b840ae 43.34%,
+    #843fe8 78.18%
+  );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
+  -webkit-text-fill-color: transparent;
 }
-.logoIcon{
+.logoIcon {
   display: flex;
 }
-.logo{
+.logo {
   width: 2em;
 }
-.text{
+.text {
   font-size: 30px;
   display: inline;
 }
-.aside{
+.aside {
   border: 1px solid black;
   display: flex;
   margin-left: 25vw;
 }
-#sideMenu{
+#sideMenu {
   position: absolute;
   background-color: white;
   padding: 0px;
@@ -63,36 +67,35 @@ nav a:hover, .text{
   top: 80px;
   left: 50vw;
   z-index: 2;
-
 }
-.list{
+.list {
   display: none;
 }
-.mainContainer{
+.mainContainer {
   padding: 1em;
 }
-.rent h1{
+.rent h1 {
   font-size: 3.5rem;
   letter-spacing: -0.02em;
   line-height: 4.7rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
-.rent span{
-  background-image: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+.rent span {
+  background-image: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   font-weight: 700;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color:transparent;
+  -webkit-text-fill-color: transparent;
 }
-.rent p{
+.rent p {
   font-size: 24px;
   font-weight: 400;
   width: 96.1%;
   line-height: 2.58rem;
   margin-bottom: 1.5rem;
 }
-.search{
+.search {
   font-size: 16px;
   color: #ffffff;
   border-radius: 0px 8px 8px 0px;
@@ -100,103 +103,112 @@ nav a:hover, .text{
   outline: none;
   padding: 0.75rem 3.438rem;
 }
-.DWallet{
+.DWallet {
   display: none;
 }
-.cWallet{
+.cWallet {
   color: #ffffff;
   padding: 10px 10px;
   border-radius: 10px;
 }
-form{
+form {
   display: flex;
   align-items: center;
 }
-.search,.cWallet,.wrapper,.DWallet{
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
-
+.search,
+.cWallet,
+.wrapper,
+.DWallet {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
-input{
+input {
   font-size: 16px;
   padding: 0.7rem;
-  outline: 1px solid #A3A3A3;
+  outline: 1px solid #a3a3a3;
   background: rgba(247, 247, 247, 0.1);
   border-radius: 8px 0px 0px 8px;
   border: none;
   max-height: 3.4rem;
   width: 70%;
 }
-.firstBatch,.secondBatch{
+.firstBatch,
+.secondBatch {
   display: none;
 }
-.wrapper{
+.wrapper {
   margin-top: 30px;
   padding: 0.6rem 0.4rem;
   display: flex;
   justify-content: space-around;
 }
-.wrapper img{
+.wrapper img {
   width: 6.7rem;
   display: block;
   padding-right: 20px;
 }
-@media(min-width: 1024px){
-  .logo{
+@media (min-width: 1024px) {
+  .logo {
     width: 2.6rem;
   }
-  .text{
+  .text {
     font-size: 3rem;
   }
-  nav{
-    padding: 1.5rem 5rem
+  nav {
+    padding: 1.5rem 5rem;
   }
-  nav a{
+  nav a {
     padding-right: 30px;
   }
-  .list{
+  .list {
     display: block;
     display: flex;
     align-items: center;
-    
   }
-  .aside{
+  .aside {
     display: none;
   }
-  .mainContainer{
+  .mainContainer {
     padding: 1.5rem 5rem;
     padding-top: 5.5rem;
     display: flex;
   }
-  .rent{
-    width:70%;
+  .rent {
+    width: 70%;
   }
-  .firstBatch{
+  .firstBatch {
     display: block;
     width: 24%;
     padding-left: 30px;
     margin: 60px 10px;
   }
-  .firstBatch img, .secondBatch img{
+  .firstBatch img,
+  .secondBatch img {
     width: 16vw;
   }
-  .secondBatch{
+  .secondBatch {
     display: block;
     width: 20%;
   }
-  .button{
-    padding: 15px 0px ;
+  .button {
+    padding: 15px 0px;
   }
-  .DWallet{
+  .DWallet {
     display: block;
     color: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 10px;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
   }
-  .search{
+  .search {
     padding-right: 5.48rem;
     padding-left: 5.48rem;
   }
-  .wrapper img{
+  .wrapper img {
     width: 12rem;
+  }
+  .deskPopUp{
+    border: 1px solid black;
+    display: flex;
   }
 }
