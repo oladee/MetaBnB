@@ -27,7 +27,7 @@ export default function Navbar() {
               <Link to="/community">Community</Link>
             </div>
             <div className="button">
-              <PopUp butClassName="cWallet" />
+              <PopUp butClassName="DWallet" />
             </div>
           </div>
         </div>

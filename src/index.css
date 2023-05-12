@@ -232,6 +232,11 @@ input {
     outline: none;
     border: none;
   }
+  .DWallet:hover{
+    background: white;
+    color: #a02279;
+    outline: 1px solid #a02279;
+  }
   .search {
     padding-right: 5.48rem;
     padding-left: 5.48rem;
