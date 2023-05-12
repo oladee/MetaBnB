@@ -25,12 +25,10 @@ export default function Navbar() {
 
               <Link to="/community">Community</Link>
             </div>
+            <div className="button">
+              <PopUp butClassName="cWallet" />
+            </div>
           </div>
-        </div>
-        <div className="button">
-        <PopUp butClassName="cWallet" popStyle="mobPopUp">
-          
-        </PopUp>
         </div>
       </nav>
     </>
@@ -52,7 +50,7 @@ export function Side({ display }) {
         <aside id="sideMenu">
           <div className="flexible">
             <div className="linkes">
-              <PopUp  butClassName="cWallet" popStyle="mobPopUp"> Thus us</PopUp>
+              <PopUp butClassName="cWallet" />
               <Link to="/Home">Home</Link>
               <Link to="/place to stay">Place to stay</Link>
               <Link to="">NFTs</Link>
@@ -64,7 +62,7 @@ export function Side({ display }) {
     </>
   );
 }
-export function PopUp({butClassName, popStyle, children}) {
+export function PopUp({ butClassName}) {
   const [popUp, setPopUp] = useState(false);
 
   function handleClick() {
@@ -75,10 +73,13 @@ export function PopUp({butClassName, popStyle, children}) {
       <Button className={butClassName} handleClick={handleClick}>
         Connect a Wallet
       </Button>
-      {popUp &&(
+      {popUp && (
         <>
-        <div className="overlay"></div>
-        <div className={popStyle} >{children}</div>
+          <div className="modal">
+            <div className="contaiModal">
+              <h1>this</h1>
+            </div>
+          </div>
         </>
       )}
     </>

@@ -159,7 +159,12 @@ input {
   nav a {
     padding-right: 30px;
   }
+  .sub{
+    width: 60%;
+  }
   .list {
+    width: 100%;
+    justify-content: space-between;
     display: block;
     display: flex;
     align-items: center;
@@ -207,8 +212,13 @@ input {
   .wrapper img {
     width: 12rem;
   }
-  .deskPopUp{
-    border: 1px solid black;
-    display: flex;
+  .modal{
+    position: fixed;
+    height: 100svh;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background-color:rgba(0,0,0,0.25);
+    
   }
 }
