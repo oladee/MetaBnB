@@ -80,7 +80,7 @@ export function PopUp({ butClassName}) {
             <div className="containModal" >
               <div className="modalHead" >
                 <h3>Connect Wallet</h3>
-                <img src={closeMenu}alt="close-icon" className="iconClose"/>
+                <img src={closeMenu}alt="close-icon" className="iconClose" onClick={handleClick}/>
               </div>
             </div>
           </div>
