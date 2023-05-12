@@ -160,6 +160,17 @@ input {
 }
 .containModal{
   background-color: white;
+  width:75%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.iconClose{
+  width: 1.5rem;
+}
+.modalHead{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media (min-width: 1024px) {
   .logo {

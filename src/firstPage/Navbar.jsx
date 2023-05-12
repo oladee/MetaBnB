@@ -76,11 +76,11 @@ export function PopUp({ butClassName}) {
       </Button>
       {popUp && (
         <>
-          <div className="modal" onClick={handleClick}>
-            <div className="containModal">
-              <div>
+          <div className="modal" >
+            <div className="containModal" >
+              <div className="modalHead" >
                 <h3>Connect Wallet</h3>
-                <img src={closeMenu}alt="" />
+                <img src={closeMenu}alt="close-icon" className="iconClose"/>
               </div>
             </div>
           </div>
