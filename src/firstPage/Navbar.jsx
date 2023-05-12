@@ -1,4 +1,5 @@
 import logo from "../assets/Vector.svg";
+import closeMenu from "../assets/icon-menu-close.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
@@ -75,9 +76,12 @@ export function PopUp({ butClassName}) {
       </Button>
       {popUp && (
         <>
-          <div className="modal">
-            <div className="contaiModal">
-              <h1>this</h1>
+          <div className="modal" onClick={handleClick}>
+            <div className="containModal">
+              <div>
+                <h3>Connect Wallet</h3>
+                <img src={closeMenu}alt="" />
+              </div>
             </div>
           </div>
         </>
