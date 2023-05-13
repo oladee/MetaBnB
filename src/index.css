@@ -158,6 +158,16 @@ input {
   align-items: center;
   
 }
+@keyframes modala {
+  from{
+    transform: scale(0);
+    transform: rotateX('0deg');
+  }
+  to{
+    transform: scale(0.5);
+    transform: rotateX('30deg');
+  }
+}
 .containModal{
   background-color: white;
   width:75%;

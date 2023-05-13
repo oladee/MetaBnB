@@ -1,7 +1,7 @@
 import logo from "../assets/Vector.svg";
 import closeMenu from "../assets/icon-menu-close.svg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
 export default function Navbar() {
   return (
@@ -69,6 +69,15 @@ export function PopUp({ butClassName}) {
   function handleClick() {
     setPopUp(!popUp);
   }
+  useEffect(() => {
+    const handleFalse = () => setPopUp(false)
+    if(popUp){
+      window.addEventListener('blur', handleFalse)
+    }else{
+      window.removeEventListener('blur', handleFalse)
+    }
+    return window.removeEventListener('blur', handleFalse)
+  },[popUp, setPopUp])
   return (
     <>
       <Button className={butClassName} handleClick={handleClick}>
@@ -76,7 +85,7 @@ export function PopUp({ butClassName}) {
       </Button>
       {popUp && (
         <>
-          <div className="modal" >
+          <div className="modal" id="modal">
             <div className="containModal" >
               <div className="modalHead" >
                 <h3>Connect Wallet</h3>
