@@ -91,6 +91,13 @@ export function PopUp({ butClassName}) {
                 <h3>Connect Wallet</h3>
                 <img src={closeMenu}alt="close-icon" className="iconClose" onClick={handleClick}/>
               </div>
+              <hr />
+              <div className="modalBody">
+                <p>Choose your preferred wallet: </p>
+                <div className="wallets">
+                  <div className="wallet1"></div>
+                </div>
+              </div>
             </div>
           </div>
         </>

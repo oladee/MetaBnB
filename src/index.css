@@ -166,12 +166,13 @@ input {
   max-width: 500px;
 }
 .iconClose{
-  width: 1.5rem;
+  width: 1rem;
 }
 .modalHead{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 15px;
 }
 @media (min-width: 1024px) {
   .logo {
