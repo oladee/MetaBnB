@@ -173,6 +173,7 @@ input {
 }
 .iconClose{
   width: 1rem;
+  cursor: pointer;
 }
 .modalHead{
   display: flex;
@@ -183,9 +184,21 @@ input {
 .modalBody{
   padding: 20px;
 }
+.modalBody > p{
+  padding-bottom: 10px;
+}
 .wallet{
    border: 1px solid rgba(0,0,0,0.25);
+   padding: 10px 20px;
+   border-radius: 10px;
    margin-bottom: 10px;
+}
+.wallet:hover{
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.wallet img{
+  padding-right: 15px;
 }
 .wallet, .writing{
   display: flex;
