@@ -100,14 +100,14 @@ export function PopUp({ butClassName}) {
                 <div className="wallets">
                   <div className=" wallet wallet1">
                     <img src={metamask} alt="metamask-logo"/>
-                    <div>
+                    <div className="writing">
                       <h5>Metamask</h5>
                       <img src={sideArrow} alt="side-arrow"/>
                     </div>
                   </div>
                   <div className=" wallet wallet2">
                     <img src={walletConnect} alt="walletconnect-logo"/>
-                    <div>
+                    <div className="writing">
                       <h5>WalletConnect</h5>
                       <img src={sideArrow} alt="side-arrow"/>
                     </div>
