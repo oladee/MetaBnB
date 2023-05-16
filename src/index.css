@@ -194,7 +194,7 @@ input {
     padding-right: 30px;
   }
   .sub{
-    width: 60%;
+    width: 65%;
   }
   .list {
     width: 100%;
@@ -202,6 +202,15 @@ input {
     display: block;
     display: flex;
     align-items: center;
+  }
+  .links{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .links a{
+    display: block;
+    width: fit-content;
   }
   .aside {
     display: none;
