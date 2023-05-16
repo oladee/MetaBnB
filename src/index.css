@@ -167,7 +167,7 @@ input {
 .containModal{
   background-color: white;
   width:75%;
-  padding: 20px;
+  padding: 20px 0px;
   border-radius: 10px;
   max-width: 500px;
 }
@@ -178,7 +178,13 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 15px;
+  padding: 0px 20px 15px;
+}
+.modalBody{
+  padding: 20px;
+}
+.wallet{
+  display: flex;
 }
 @media (min-width: 1024px) {
   .logo {

@@ -1,5 +1,8 @@
 import logo from "../../assets/Vector.svg";
 import closeMenu from "../../assets/icon-menu-close.svg";
+import metamask from "../../assets/metamasklogo.svg";
+import walletConnect from "../../assets/walletConnect.svg";
+import sideArrow from "../../assets/sideArrow.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
@@ -95,8 +98,19 @@ export function PopUp({ butClassName}) {
               <div className="modalBody">
                 <p>Choose your preferred wallet: </p>
                 <div className="wallets">
-                  <div className="wallet1">
-                    
+                  <div className=" wallet wallet1">
+                    <img src={metamask} alt="metamask-logo"/>
+                    <div>
+                      <h5>Metamask</h5>
+                      <img src={sideArrow} alt="side-arrow"/>
+                    </div>
+                  </div>
+                  <div className=" wallet wallet2">
+                    <img src={walletConnect} alt="walletconnect-logo"/>
+                    <div>
+                      <h5>WalletConnect</h5>
+                      <img src={sideArrow} alt="side-arrow"/>
+                    </div>
                   </div>
                 </div>
               </div>
