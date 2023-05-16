@@ -106,6 +106,12 @@ nav a:hover,
 .DWallet {
   display: none;
 }
+.DWallet:hover, .search:hover{
+  background: white;
+  color: #a02279;
+  outline: 1px solid #a02279;
+  transition: 0.2s ease-in-out;
+}
 .cWallet {
   color: #ffffff;
   padding: 10px 10px;
@@ -206,11 +212,11 @@ input {
     display: flex;
   }
   .rent {
-    width: 70%;
+    width: 80%;
   }
   .firstBatch {
     display: block;
-    width: 24%;
+    width: 27%;
     padding-left: 30px;
     margin: 60px 10px;
   }
@@ -237,11 +243,7 @@ input {
     outline: none;
     border: none;
   }
-  .DWallet:hover{
-    background: white;
-    color: #a02279;
-    outline: 1px solid #a02279;
-  }
+
   .search {
     padding-right: 5.48rem;
     padding-left: 5.48rem;

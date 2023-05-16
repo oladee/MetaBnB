@@ -1,5 +1,5 @@
-import logo from "../assets/Vector.svg";
-import closeMenu from "../assets/icon-menu-close.svg";
+import logo from "../../assets/Vector.svg";
+import closeMenu from "../../assets/icon-menu-close.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Hamburger from "hamburger-react";
@@ -81,7 +81,7 @@ export function PopUp({ butClassName}) {
   return (
     <>
       <Button className={butClassName} handleClick={handleClick}>
-        Connect a Wallet
+        Connect Wallet
       </Button>
       {popUp && (
         <>
@@ -95,7 +95,9 @@ export function PopUp({ butClassName}) {
               <div className="modalBody">
                 <p>Choose your preferred wallet: </p>
                 <div className="wallets">
-                  <div className="wallet1"></div>
+                  <div className="wallet1">
+                    
+                  </div>
                 </div>
               </div>
             </div>
