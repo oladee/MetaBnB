@@ -46,7 +46,10 @@ export default function Maincon() {
         <img src={metaMask} alt="" />
         <img src={openSea} alt="" />
       </div>
-      <section>
+      <section className="inspiration">
+        <h3 className="inspiration-text">
+          Inspiration for your next adventure
+          </h3>
         <div className="card-list">
         {carddetail}
         </div>
