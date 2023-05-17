@@ -247,6 +247,23 @@ input {
 .metaNFTs{
   background:linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
   color: white;
+  padding: 2rem;
+  font-size: 18px;
+  line-height: 35px;
+}
+.nfts-wirteup h3{
+  font-size: 2.5rem;
+}
+.nfts-wirteup p{
+  padding: 20px 0px;
+}
+.learn-more{
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  padding: 0.875rem 2.063rem;
+  color: #A02279;
 }
 @media (min-width: 1024px) {
   .logo {
