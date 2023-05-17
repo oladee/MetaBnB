@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Red Rose", cursive;
 }
 :root {
   font-family: "Red Rose", cursive;
@@ -270,16 +271,16 @@ input {
   transition: 0.4s;
 }
 .nfts-images .first{
-  top: 20px;
-  left: 120px;
+  top: 2vw;
+  left: 20.5vw;
 }
 .nfts-images .second{
-  top: 70px;
-  right: 120px;
+  top: 18.375vw;
+  right: 50.5%;
 }
 .nfts-images .third{
-  bottom: 30px;
-  left: 120px;
+  bottom: 10.875vw;
+  left: 37.5%;
 }
 .learn-more{
   background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
@@ -288,6 +289,11 @@ input {
   border-radius: 9px;
   padding: 0.875rem 2.063rem;
   color: #A02279;
+}
+.learn-more:hover{
+  cursor: pointer;
+  background: #A02279;
+  color: white;
 }
 @media (min-width: 1024px) {
   .logo {
@@ -390,6 +396,25 @@ input {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+  }
+  .nfts-wirteup p{
+    font-size: 18px;
+    width: 60%;
+  }
+  .nfts-images img{
+    width: 50%;
+  }
+  .nfts-images .first{
+    top: 2vw;
+    left: 13.5vw;
+  }
+  .nfts-images .second{
+    top: 10.375vw;
+    right: 40.5%;
+  }
+  .nfts-images .third{
+    bottom: 1.875vw;
+    left: 37.5%;
   }
 
 }
