@@ -1,7 +1,10 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Cards(props){
     return(
         <div className="card-profile">
-            <img src={props.img} alt="" className="card--img"/>
+            <LazyLoadImage
+            src={props.img}
+            alt="" className="card--img"/>
             <div className="card-writeup1" style={{display:"flex",
             justifyContent:"space-between"}}>
                 <p>{props.desert}</p>

@@ -257,6 +257,30 @@ input {
 .nfts-wirteup p{
   padding: 20px 0px;
 }
+.nfts-images{
+  position: relative;
+}
+.nfts-images img{
+  width: 50%;
+  max-width: 350px;
+  position: relative;
+}
+.nfts-images img:hover{
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+.nfts-images .first{
+  top: 20px;
+  left: 120px;
+}
+.nfts-images .second{
+  top: 70px;
+  right: 120px;
+}
+.nfts-images .third{
+  bottom: 30px;
+  left: 120px;
+}
 .learn-more{
   background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
   outline: none;
@@ -356,6 +380,16 @@ input {
   }
   .card-profile{
     width: 95%;
+  }
+  .metaNFTs{
+    display: flex;
+    padding: 5rem;
+  }
+  .nfts-wirteup{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
   }
 
 }
