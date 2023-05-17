@@ -6,7 +6,13 @@ import image3 from "../assets/image 3.svg";
 import image4 from "../assets/image 4.svg";
 import image5 from "../assets/image 5.svg";
 import image6 from "../assets/image 6.svg";
+import data from "../data"
+import Cards from "./Cards";
 export default function Maincon() {
+  const carddetail = data.map(item => {
+    return <Cards key={item.image} img={item.image} desert={item.desert} MBT={item.MBT}
+    km={item.km} availability = {item.availbility}/>
+  })
   return (
     <>
       <div className="mainContainer">
@@ -40,6 +46,11 @@ export default function Maincon() {
         <img src={metaMask} alt="" />
         <img src={openSea} alt="" />
       </div>
+      <section>
+        <div className="card-list">
+        {carddetail}
+        </div>
+      </section>
     </>
   );
 }

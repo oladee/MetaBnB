@@ -209,6 +209,28 @@ input {
   justify-content: space-between;
 
 }
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card-profile{
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto; 
+  display: flex;          
+  flex-direction: column; 
+}
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+section {
+  padding: 20px;
+}
+
 @media (min-width: 1024px) {
   .logo {
     width: 2.6rem;
