@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Form from "./Form";
 import mbtoken from "../assets/MBtoken.svg";
 import metaMask from "../assets/Metamask.svg";
 import openSea from "../assets/Opensea.svg";
@@ -7,7 +7,8 @@ import image4 from "../assets/image 4.svg";
 import image5 from "../assets/image 5.svg";
 import image6 from "../assets/image 6.svg";
 import data from "../data"
-import Cards from "./Cards";
+import Cards from "./Cards"
+import Nfts from "./Nfts";
 export default function Maincon() {
   const carddetail = data.map(item => {
     return <Cards key={item.image} img={item.image} desert={item.desert} MBT={item.MBT}
@@ -54,37 +55,10 @@ export default function Maincon() {
         {carddetail}
         </div>
       </section>
+      <Nfts/>
     </>
   );
 }
-export function Form() {
-  const [formData, setFormData] = useState("");
-  const [value, setValue] = useState(null);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormData({ ...formData, value });
-  };
-  const handleClick = () => setValue("");
-  const changes = (e) => {
-    e.preventDefault();
-    setValue(e.target.value);
-  };
-  return (
-    <>
-      <form action="" onSubmit={handleSubmit}>
-        <input
-          value={value}
-          type="text"
-          name=""
-          id="searchBar"
-          onChange={changes}
-        />
-        <button onClick={handleClick} className="search">
-          Search
-        </button>
-      </form>
-    </>
-  );
-}
+
 
 

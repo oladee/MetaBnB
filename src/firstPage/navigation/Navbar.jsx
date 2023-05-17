@@ -1,5 +1,6 @@
 import logo from "../../assets/Vector.svg";
 import closeMenu from "../../assets/icon-menu-close.svg";
+import { Button } from "./Button";
 import metamask from "../../assets/metamasklogo.svg";
 import walletConnect from "../../assets/walletConnect.svg";
 import sideArrow from "../../assets/sideArrow.svg";
@@ -121,10 +122,4 @@ export function PopUp({ butClassName}) {
     </>
   );
 }
-export function Button({ handleClick, children, className }) {
-  return (
-    <button className={className} onClick={handleClick}>
-      {children}
-    </button>
-  );
-}
+

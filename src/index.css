@@ -244,7 +244,10 @@ input {
   text-align: center;
   padding-bottom: 30px;
 }
-
+.metaNFTs{
+  background:linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  color: white;
+}
 @media (min-width: 1024px) {
   .logo {
     width: 2.6rem;
