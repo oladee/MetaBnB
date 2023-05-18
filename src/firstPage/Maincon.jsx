@@ -56,6 +56,7 @@ export default function Maincon() {
         </div>
       </section>
       <Nfts/>
+      <footer></footer>
     </>
   );
 }
