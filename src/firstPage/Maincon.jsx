@@ -2,10 +2,10 @@ import Form from "./Form";
 import mbtoken from "../assets/MBtoken.svg";
 import metaMask from "../assets/Metamask.svg";
 import openSea from "../assets/Opensea.svg";
-import image3 from "../assets/image 3.svg";
-import image4 from "../assets/image 4.svg";
-import image5 from "../assets/image 5.svg";
-import image6 from "../assets/image 6.svg";
+import image3 from "../assets/image 3.png";
+import image4 from "../assets/image 4.png";
+import image5 from "../assets/image 5.png";
+import image6 from "../assets/image 6.png";
 import data from "../data"
 import Cards from "./Cards"
 import Nfts from "./Nfts";
@@ -56,7 +56,6 @@ export default function Maincon() {
         </div>
       </section>
       <Nfts/>
-      <footer></footer>
     </>
   );
 }
