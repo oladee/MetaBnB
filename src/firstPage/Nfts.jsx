@@ -1,7 +1,7 @@
 import { Button } from "./navigation/Button"
-import firstimg from "../assets/image 9.svg";
+import firstimg from "../assets/image 9.png";
 import secondimg from "../assets/image 7.svg";
-import thirdimg from "../assets/image 8.svg";
+import thirdimg from "../assets/image 8.png";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 export default function Nfts(){
     return(<>

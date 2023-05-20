@@ -1,8 +1,8 @@
 import logo from "../../assets/Vector.svg";
 import closeMenu from "../../assets/icon-menu-close.svg";
 import { Button } from "./Button";
-import metamask from "../../assets/metamasklogo.svg";
-import walletConnect from "../../assets/walletConnect.svg";
+import metamask from "../../assets/metamasklogo.png";
+import walletConnect from "../../assets/walletConnect.png";
 import sideArrow from "../../assets/sideArrow.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";

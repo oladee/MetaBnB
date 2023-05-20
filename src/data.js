@@ -1,11 +1,11 @@
-import frame1 from "./assets/Frame 151.svg"
-import frame2 from "./assets/Frame 143.svg"
-import frame3 from "./assets/Frame 151 (1).svg"
-import frame4 from "./assets/Frame 151 (2).svg"
-import frame5 from "./assets/Frame 151 (3).svg"
-import frame6 from "./assets/Frame 151 (4).svg"
-import frame7 from "./assets/Frame 151 (5).svg"
-import frame8 from "./assets/Frame 151 (6).svg"
+import frame1 from "./assets/Frame 151.png"
+import frame2 from "./assets/Frame 143.png"
+import frame3 from "./assets/Frame 151 (1).png"
+import frame4 from "./assets/Frame 151 (2).png"
+import frame5 from "./assets/Frame 151 (3).png"
+import frame6 from "./assets/Frame 151 (4).png"
+import frame7 from "./assets/Frame 151 (5).png"
+import frame8 from "./assets/Frame 151 (6).png"
 export default[
     {
         image:frame1,
