@@ -22,7 +22,7 @@ export default function Navbar() {
 
           <div className="list">
             <div className="links">
-              <Link to="/Home">Home</Link>
+              <Link to="/MetaBnB">Home</Link>
 
               <Link to="/place-to-stay">Place to stay</Link>
 
