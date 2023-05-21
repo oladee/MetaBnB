@@ -10,28 +10,30 @@ export default function Footer() {
     <>
       <footer>
         <div className="logo-section">
+          <div>
           <img src={metabnblogo} className="footer-logo" alt="Metabnb logo" />
           <div className="socialIcons">
             <img src={facebook} alt="facebook-icon" />
             <img src={instagram} alt="instagram-icon" />
             <img src={twitter} alt="twitter-icon" />
           </div>
+          </div>
           <div className="footer-links">
-            <div className="links1">
+            <div className="linkss">
               <h5>Community</h5>
               <p>NFTs</p>
               <p>Tokens</p>
               <p>Landlords</p>
               <p>Discord</p>
             </div>
-            <div className="links2">
+            <div className="linkss">
                 <h5>Places</h5>
                 <p>Castle</p>
                 <p>Farms</p>
                 <p>Beach</p>
                 <p>Learn More</p>
             </div>
-            <div className="links3">
+            <div className="linkss">
                 <h5>About Us</h5>
                 <p>Road map</p>
                 <p>Creators</p>
@@ -41,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="copyrights">
-            <span><img src={copyrightlogo} alt="" /> {year}</span>
+            <span className="footerspan"><img src={copyrightlogo} alt="copyr" /><p> {year}</p></span>
         </div>
       </footer>
     </>

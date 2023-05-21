@@ -32,7 +32,8 @@ nav a {
   margin: 15px;
 }
 nav a:hover,
-.text {
+.text,
+.footer-links p:hover {
   background-image: linear-gradient(
     91.47deg,
     #dc3e88 18.25%,
@@ -42,6 +43,7 @@ nav a:hover,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 .logoIcon {
   display: flex;
@@ -96,7 +98,11 @@ nav a:hover,
   line-height: 2.58rem;
   margin-bottom: 1.5rem;
 }
-.search, .cWallet, .metaNFTs, .learn-more:hover, footer{
+.search,
+.cWallet,
+.metaNFTs,
+.learn-more:hover,
+footer {
   color: #ffffff;
 }
 .search {
@@ -109,7 +115,8 @@ nav a:hover,
 .DWallet {
   display: none;
 }
-.DWallet:hover, .search:hover{
+.DWallet:hover,
+.search:hover {
   background: white;
   color: #a02279;
   outline: 1px solid #a02279;
@@ -154,62 +161,61 @@ input {
   display: block;
   padding-right: 20px;
 }
-.modal{
+.modal {
   position: fixed;
   height: 100svh;
   width: 100%;
   top: 0px;
   left: 0;
-  background-color:rgba(0,0,0,0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.containModal{
+.containModal {
   background-color: white;
-  width:75%;
+  width: 75%;
   padding: 20px 0px;
   border-radius: 10px;
   max-width: 500px;
 }
-.iconClose{
+.iconClose {
   width: 1rem;
   cursor: pointer;
 }
-.modalHead{
+.modalHead {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px 15px;
 }
-.modalBody{
+.modalBody {
   padding: 20px;
 }
-.modalBody > p{
+.modalBody > p {
   padding-bottom: 10px;
 }
-.wallet{
-   border: 1px solid rgba(0,0,0,0.25);
-   padding: 10px 20px;
-   border-radius: 10px;
-   margin-bottom: 10px;
+.wallet {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
-.wallet:hover{
+.wallet:hover {
   background-color: whitesmoke;
   cursor: pointer;
 }
-.wallet img{
+.wallet img {
   padding-right: 15px;
 }
-.wallet, .writing{
+.wallet,
+.writing {
   display: flex;
   align-items: center;
 }
-.writing{
+.writing {
   width: 90%;
   justify-content: space-between;
-
 }
 .card-list {
   display: flex;
@@ -217,17 +223,17 @@ input {
   gap: 15px;
   overflow-x: auto;
 }
-.card-profile{
+.card-profile {
   width: 68%;
   font-size: 12px;
-  border: 1px solid rgba(0,0,0,0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 10px;
-  flex: 0 0 auto; 
-  display: flex;          
-  flex-direction: column; 
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-.card-profile:hover{
+.card-profile:hover {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   transform: scale(0.9);
   cursor: pointer;
@@ -238,77 +244,84 @@ input {
   border-radius: 9px;
   margin-bottom: 9px;
 }
-.inspiration{
+.inspiration {
   padding: 20px;
 }
-.inspiration-text{
+.inspiration-text {
   font-size: 1.2rem;
   text-align: center;
   padding-bottom: 30px;
 }
-.metaNFTs{
-  background:linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+.metaNFTs {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   padding: 2rem;
   font-size: 18px;
   line-height: 35px;
 }
-.nfts-wirteup h3{
+.nfts-wirteup h3 {
   font-size: 2.5rem;
 }
-.nfts-wirteup p{
+.nfts-wirteup p {
   padding: 20px 0px;
 }
-.nfts-images{
+.nfts-images {
   position: relative;
 }
-.nfts-images img{
+.nfts-images img {
   width: 50%;
   max-width: 350px;
   position: relative;
 }
-.nfts-images img:hover{
+.nfts-images img:hover {
   transform: scale(0.8);
   transition: 0.4s;
 }
-.nfts-images .first{
+.nfts-images .first {
   top: 2vw;
   left: 20.5vw;
 }
-.nfts-images .second{
+.nfts-images .second {
   top: 18.375vw;
   right: 50.5%;
 }
-.nfts-images .third{
+.nfts-images .third {
   bottom: 10.875vw;
   left: 37.5%;
 }
-.learn-more{
-  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+.learn-more {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   outline: none;
   border: none;
   border-radius: 9px;
   padding: 0.875rem 2.063rem;
-  color: #A02279;
+  color: #a02279;
 }
-.learn-more:hover{
+.learn-more:hover {
   cursor: pointer;
-  background: #A02279;
+  background: #a02279;
 }
-footer{
-  background-color: #1D1D1E;
+footer {
+  background-color: #1d1d1e;
   padding: 1rem 2rem;
   font-weight: 400;
 }
-.footer-logo{
+.footer-logo {
   padding: 30px 0px;
 }
-.socialIcons img{
+.socialIcons img {
   display: inline-block;
   padding-right: 20px;
 }
-.footer-links h5{
-  font-size: 20px;
+.footerspan{
+  display: flex;
+  align-items: center;
+}
+.footer-links h5 {
+  font-size: 25px;
   font-weight: 700;
+}
+.footer-links p {
+  padding: 5px 0px;
 }
 @media (min-width: 1024px) {
   .logo {
@@ -323,7 +336,7 @@ footer{
   nav a {
     padding-right: 30px;
   }
-  .sub{
+  .sub {
     width: 65%;
   }
   .list {
@@ -333,12 +346,12 @@ footer{
     display: flex;
     align-items: center;
   }
-  .links{
+  .links {
     display: flex;
     align-items: center;
     justify-content: left;
   }
-  .links a{
+  .links a {
     display: block;
     width: fit-content;
   }
@@ -359,7 +372,8 @@ footer{
     padding-left: 30px;
     margin: 60px 10px;
   }
-  .firstBatch img:hover, .secondBatch img:hover{
+  .firstBatch img:hover,
+  .secondBatch img:hover {
     transform: scale(0.9);
     transition: 1s ease-in-out;
   }
@@ -390,46 +404,59 @@ footer{
   .wrapper img {
     width: 12rem;
   }
-  .inspiration-text{
+  .inspiration-text {
     font-size: 3rem;
   }
-  .card-list{
+  .card-list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     place-content: center;
   }
-  .card-profile{
+  .card-profile {
     width: 95%;
   }
-  .metaNFTs{
+  .metaNFTs {
     display: flex;
     padding: 5rem;
   }
-  .nfts-wirteup{
+  .nfts-wirteup {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
   }
-  .nfts-wirteup p{
+  .nfts-wirteup p {
     font-size: 18px;
     width: 60%;
   }
-  .nfts-images img{
+  .nfts-images img {
     width: 50%;
   }
-  .nfts-images .first{
+  .nfts-images .first {
     top: 2vw;
     left: 13.5vw;
   }
-  .nfts-images .second{
+  .nfts-images .second {
     top: 10.375vw;
     right: 40.5%;
   }
-  .nfts-images .third{
+  .nfts-images .third {
     bottom: 1.875vw;
     left: 37.5%;
   }
-
+  footer {
+    padding: 2rem 3rem;
+  }
+  .logo-section,
+  .footer-links {
+    display: flex;
+    align-items: top;
+  }
+  .logo-section {
+    justify-content: space-between;
+  }
+  .footer-links .linkss {
+    padding: 10px 80px;
+  }
 }
