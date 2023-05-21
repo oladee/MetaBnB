@@ -295,6 +295,9 @@ input {
   background: #A02279;
   color: white;
 }
+footer{
+  background-color: #1D1D1E;
+}
 @media (min-width: 1024px) {
   .logo {
     width: 2.6rem;
