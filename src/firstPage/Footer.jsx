@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="logo-section">
-          <img src={metabnblogo} alt="Metabnb logo" />
+          <img src={metabnblogo} className="footer-logo" alt="Metabnb logo" />
           <div className="socialIcons">
             <img src={facebook} alt="facebook-icon" />
             <img src={instagram} alt="instagram-icon" />
