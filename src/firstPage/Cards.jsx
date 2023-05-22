@@ -19,7 +19,7 @@ export default function Cards(props) {
         className="card-writeup2"
         style={{
           display: "flex",
-          fontSize: "10px",
+          fontSize: "5px",
           justifyContent: "space-between",
         }}
       >

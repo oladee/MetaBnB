@@ -24,7 +24,7 @@ export default function Navbar() {
             <div className="links">
               <Link to="/MetaBnB">Home</Link>
 
-              <Link to="/place-to-stay">Place to stay</Link>
+              <Link to="/MetaBnB/placetostay">Place to stay</Link>
 
               <Link to="/NFT">NFTs</Link>
 
@@ -56,8 +56,8 @@ export function Side({ display }) {
           <div className="flexible">
             <div className="linkes">
               <PopUp butClassName="cWallet" />
-              <Link to="/Home">Home</Link>
-              <Link to="/place to stay">Place to stay</Link>
+              <Link to="/MetaBnB">Home</Link>
+              <Link to="/MetaBnB/placetostay">Place to stay</Link>
               <Link to="">NFTs</Link>
               <Link to="">Community</Link>
             </div>
