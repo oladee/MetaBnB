@@ -12,7 +12,7 @@ import Nfts from "./Nfts";
 export default function Maincon() {
   const carddetail = data.map(item => {
     return <Cards key={item.image} img={item.image} desert={item.desert} MBT={item.MBT}
-    km={item.km} availability = {item.availbility}/>
+    km={item.km} availability = {item.availbility} stars={item.stars}/>
   })
   return (
     <>
